@@ -29,7 +29,7 @@ section {
 }
 
 .header_section h4 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -179,7 +179,6 @@ section {
 }
 
 .nav-link.active {
-  
   border-bottom: 2px solid #ffffff !important; 
 }
 
@@ -252,7 +251,7 @@ section {
 .who-we-are p {
   font-weight: 500;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .who-we-are img {
