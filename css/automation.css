@@ -172,13 +172,19 @@ section {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #3C3C3A;
+  color: #BBBBBB;
+}
+.navbar-nav .nav-link .active {
+  border-bottom: 2px solid #007bff;
+}
 
+.nav-link.active {
+  
+  border-bottom: 2px solid #ffffff !important; 
 }
 
 .navbar-toggler {
   border: 1px solid rgb(223, 216, 216);
-
   background-color: transparent;
 }
 
@@ -209,7 +215,7 @@ section {
   padding-right: 20px;
   border-radius: 16px;
   padding-top: 6px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
   border: 1px solid white;
   color: #ffffff;
   margin-top: 10px;
