@@ -27,7 +27,7 @@
     }
 
     .navbar-brand img {
-      width: 100px;
+      width: 90px;
       padding-left: 10px;
       padding-top: 20px;
     }
@@ -59,7 +59,7 @@
     .btn {
       background-color: transparent;
       border: none;
-      border-radius: 18px;
+      border-radius: 12px;
       border: 2px solid white;
       color: #ffffff;
       font-size: 18px;
@@ -90,6 +90,19 @@
       height: auto;
       border-radius: 50%;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .whatsapp-button img:hover {
+      transform: scale(1.1);
+      /* Slightly enlarge on hover */
+    }
+
+    @media (max-width: 768px) {
+      .whatsapp-button {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+      }
     }
   </style>
 </head>
@@ -137,4 +150,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
