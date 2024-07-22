@@ -138,15 +138,65 @@ section {
   border-bottom: 2px solid #ffffff !important; 
 }
 
+/* Styles for the icon inside the button */
+
 .navbar-toggler {
-  border: 1px solid rgb(223, 216, 216);
-  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: #ffffff; /* Change to your desired background color */
+  border-radius: 50%; /* Makes the button circular */
+  cursor: pointer;
+  position: relative;
+  width: 45px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: #fff; /* Change to your desired icon color */
+  transition: background-color 0.3s ease;
 }
 
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #fff; /* Change to your desired icon color */
+  transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+}
+
+/* Positioning the lines to create the hamburger effect */
+.navbar-toggler-icon::before {
+  top: -2px;
+}
+
+.navbar-toggler-icon::after {
+  bottom: -2px;
+}
+
+/* Active state to create an X effect when the navbar is open */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
 /* end navbar section */
 
 .main-section {
